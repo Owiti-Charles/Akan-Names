@@ -12,6 +12,7 @@ This project is a web application that takes a user's birthday and calculates th
 
 
 ## Live Page 
+Owiti-charles.github.io/Akan-Names
 
 
 ## Installation / Setup instruction
