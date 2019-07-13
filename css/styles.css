@@ -16,29 +16,38 @@ body{
  background-size: cover;
 }
 h1 {
-
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bolder;
   text-align: center;
   color: whitesmoke;
+  margin-bottom: 0px;
+  padding-bottom: 2px;
+  text-shadow: 2px 2px 5px black;
+  
 }
 .overlay{
   background-color: rgb(67, 101, 136);
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 25%;
+  margin-right: 20%;
   opacity: 0.9;
   border-radius: 5px;
 }
 h2{
   text-align: center;
-  font-weight: bolder;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 0px;
+  font-family: 'Quattrocento', serif;
 }
 .form{
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 .form-group{
-  color: brown;
-  font-weight: 700;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
   font-size: 18px;
+  font-family: 'Quattrocento', serif;
 }
 .form-check-label{
   color: black;
@@ -46,4 +55,21 @@ h2{
 input[type="radio"] {
   -webkit-transform: scale(1.5);
   transform: scale(1.5);
+}
+@media only screen and (max-width: 600px){
+  .overlay{
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media only screen and (max-width: 800px){
+  .overlay{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+}
+#heading img{
+  float: left;
+  width: 10%;
 }
