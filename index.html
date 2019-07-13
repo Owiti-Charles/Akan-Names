@@ -13,26 +13,44 @@
     <h2>Get Your Akan name Easy!!!!!!!</h2>
     <h3>Akan names are derived from Ghanian culture. <br> Names are based on gender and the date you were born</h3>
   <div class="overlay">
-      <!-- <nav class="navbar navbar-default bg-light top-fixed">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-              </button>
-              <a class="navbar-brand" href="#">WebSiteName</a>
+      <div class="container">
+          <h2>Enter Your Details Here!</h2>
+          <form name="myForm">
+            <div class="form-group">
+              <label for="number">Century of Birth:</label>
+              <input type="number" class="form-control" id="century" placeholder="Century of Birth Eg: 20 for the year 2000" name="century">
             </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"> Sign Up</a></li>
-                <li><a href="#">Login</a></li>
-              </ul>
+            <div class="form-group">
+              <label for="number">Year of Birth:</label>
+              <input type="number" class="form-control" id="year" placeholder="Year of Birth Eg: 19 if born in 2019" name="year">
             </div>
-          </div>
-      </nav> -->
-      
+            <div class="form-group">
+              <label for="month">Month of Birth:</label>
+              <input type="number" class="form-control" id="month" placeholder="Month of Birth" name="month">
+            </div>
+            <div class="form-group">
+              <label for="date">Date of Birth:</label>
+              <input type="number" class="form-control" id="date" placeholder="Date of Birth" name="date">
+            </div>
+            <div class="form-group">
+              <label for="month">Gender</label><br>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="gender" id="male" checked>Male
+                </label>
+                </div>
+              <div class="form-check-inline">
+                <label class="form-check-label">
+                  <input type="radio" class="form-check-input" name="gender" id="female">Female
+                </label>
+              </div>
+            </div>
+                
+              <br>
+              <br>
+            <button type="submit" class="btn btn-success" onclick="findName();">Submit</button>
+          </form>
+      </div>
     </div>
   <script src="javascript/script.js"></script>
 </body>
