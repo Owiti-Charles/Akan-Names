@@ -32,7 +32,7 @@ h1 {
   margin-left: 25%;
   margin-right: 16%;
   opacity: 0.9;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 #get{
   color: whitesmoke;
@@ -95,6 +95,16 @@ input[type="radio"] {
   font-weight: 600;
 }
 .footer-copyright a{
-color: blue;
+color: rgb(0, 0, 0);;
 font-weight: 600;
 }
+.footer-copyright a:hover{
+  color: rgb(254, 254, 254);
+  font-weight: 700;
+  text-decoration: none;
+}
+.card-text a:hover{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+ 
