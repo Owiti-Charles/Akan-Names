@@ -10,8 +10,40 @@ background: transparent;
   color:black;
 }
 body{
-  background-color: aqua;
+ background-image: url(/images/akannames.jpg);
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover;
 }
-h1, h2, h3 {
+h1 {
+
   text-align: center;
+  color: whitesmoke;
+}
+.overlay{
+  background-color: rgb(67, 101, 136);
+  margin-left: 30%;
+  margin-right: 30%;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+h2{
+  text-align: center;
+  font-weight: bolder;
+}
+.form{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.form-group{
+  color: brown;
+  font-weight: 700;
+  font-size: 18px;
+}
+.form-check-label{
+  color: black;
+}
+input[type="radio"] {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
