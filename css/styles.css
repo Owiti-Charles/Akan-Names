@@ -28,15 +28,19 @@ h1 {
 .overlay{
   background-color: rgb(67, 101, 136);
   margin-left: 25%;
-  margin-right: 20%;
+  margin-right: 16%;
   opacity: 0.9;
   border-radius: 5px;
+}
+#get{
+  color: whitesmoke;
+  text-shadow: 2px 2px 5px black;
+  margin-bottom: 10px;
 }
 h2{
   text-align: center;
   font-weight: bold;
   color: black;
-  margin-bottom: 0px;
   font-family: 'Quattrocento', serif;
 }
 .form{
@@ -72,4 +76,13 @@ input[type="radio"] {
 #heading img{
   float: left;
   width: 10%;
+}
+.card{
+  background: rgb(115, 150, 185);
+}
+.card-body{
+  color: rgb(0, 0, 0);
+}
+.card-deck{
+  padding-bottom: 20px;
 }
