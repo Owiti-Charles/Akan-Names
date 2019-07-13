@@ -1,14 +1,3 @@
-nav{
-background: transparent;
-}
-.nav-link,.navbar-brand{
-  /* padding: 20px; */
-  margin: 16px;
-  font-weight: bold;
-}
-.nav-link:hover{
-  color:black;
-}
 body{
  background-image: url(/images/akannames.jpg);
  background-position: center center;
