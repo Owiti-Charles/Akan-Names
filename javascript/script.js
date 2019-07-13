@@ -1,13 +1,14 @@
+
 function validate() {
-   
+  var genders = document.getElementsByName("gender");
   if( document.myForm.century.value == "" || isNaN( document.myForm.century.value ) ||
-  document.myForm.century.value.length != 2) {
+  document.myForm.century.value.length > 2) {
      alert( "Please provide a valid Century of birth! eg 20 for the year 2019" );
      document.myForm.century.focus() ;
      return false;
   }
   else if( document.myForm.year.value == "" || isNaN( document.myForm.year.value ) ||
-  document.myForm.year.value.length > 2) {
+  document.myForm.year.value.length > 2 || document.myForm.month.value > 99  || document.myForm.month.value <=0) {
      alert( "Please provide a valid year of birth! eg 19 for 2019" );
      document.myForm.year.focus() ;
      return false;
@@ -23,6 +24,10 @@ function validate() {
      document.myForm.day.focus() ;
      return false;
   }
+  else if(genders[0].checked==false && genders[1].checked==false ) {
+      alert("You must select male or female");
+      return false;
+  }   
   else{
     return( true );
   }
