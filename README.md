@@ -26,11 +26,15 @@ https://Owiti-charles.github.io/Akan-Names
 
 ## Technologies Used
 
-* HTML 
-* CSS
-* JavaScript
+* [HTML5](https://github.com/topics/html5)
+* [CSS](https://github.com/topics/css3)
+* [JavaScript](https://github.com/topics/javascript)
 * markdown
-* Bootstrap
+* [Bootstrap](https://github.com/topics/bootstrap)
+
+## BDD
+
+## Known Bugs
 
 ## Contact Information 
 
