@@ -1,0 +1,14 @@
+nav{
+/* background: transparent; */
+}
+.nav-link,.navbar-brand{
+  /* padding: 20px; */
+  margin: 16px;
+  font-weight: bold;
+}
+.nav-link:hover{
+  color:black;
+}
+.collapse{
+  color: black;
+}
