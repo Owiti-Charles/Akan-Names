@@ -12,7 +12,7 @@ This project is a web application that takes a user's birthday and calculates th
 <img src="https://github.com/Owiti-Charles/Akan-Names/blob/master/images/Akannames.png" width="800px" height="400px">
 
 ## Live Page 
-https://Owiti-charles.github.io/Akan-Names
+<!-- https://Owiti-charles.github.io/Akan-Names -->
 
 
 ## Installation / Setup instruction
