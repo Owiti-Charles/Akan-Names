@@ -1,5 +1,5 @@
 nav{
-/* background: transparent; */
+background: transparent;
 }
 .nav-link,.navbar-brand{
   /* padding: 20px; */
@@ -9,6 +9,9 @@ nav{
 .nav-link:hover{
   color:black;
 }
-.collapse{
-  color: black;
+body{
+  background-color: aqua;
+}
+h1, h2, h3 {
+  text-align: center;
 }
