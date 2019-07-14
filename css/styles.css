@@ -20,7 +20,7 @@ h1 {
   width: 100%;
 }
 .overlay{
-  background-color: rgb(0,0,0,0.4);
+  background-color: rgb(0,0,0,0.5);
   margin-left: 25%;
   margin-right: 16%;
   opacity: 0.9;
