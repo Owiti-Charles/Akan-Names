@@ -6,13 +6,13 @@ var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 function validate() {
   var genders = document.getElementsByName("gender");
   if( document.myForm.century.value == "" || isNaN( document.myForm.century.value ) ||
-  document.myForm.century.value.length > 2) {
-     alert( "Please provide a valid Century of birth! eg 20 for the year 2019" );
+  document.myForm.century.value.length > 2||document.myForm.century.value >  20 || document.myForm.century.value <=0) {
+     alert( "Please provide a valid Century of birth! eg 20 for the year 2019 and can not be greater than 20");
      document.myForm.century.focus() ;
      return false;
   }
   else if( document.myForm.year.value == "" || isNaN( document.myForm.year.value ) ||
-  document.myForm.year.value.length > 2 || document.myForm.month.value > 99  || document.myForm.month.value <=0) {
+  document.myForm.year.value.length > 2 || document.myForm.year.value > 99  || document.myForm.year.value <=0) {
      alert( "Please provide a valid year of birth! eg 19 for 2019" );
      document.myForm.year.focus() ;
      return false;
