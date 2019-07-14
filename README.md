@@ -9,10 +9,10 @@
 This project is a web application that takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. 
 
 ## Screenshot
-<img src="https://github.com/Owiti-Charles/Akan-Names/blob/master/images/Akannames.png" width="800px" height="400px">
+<img src="https://raw.githubusercontent.com/Owiti-Charles/Akan-Names/master/images/screenshot.png" width="800px" height="400px">
 
 ## Live Page 
-<!-- https://Owiti-charles.github.io/Akan-Names -->
+https://Owiti-charles.github.io/Akan-Names 
 
 
 ## Installation / Setup instruction
@@ -70,6 +70,7 @@ True value is output. Output example: **You were born on Sunday and Your akan na
 **Expected output is *You were born on Sunday and Your akan name is Kwasi!*** 
 
 ## Known Bugs
+* Some output are not as accurate as expected..
 
 ## Contact Information 
 
