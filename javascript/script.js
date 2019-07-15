@@ -5,25 +5,19 @@ var femaleNames = ["Akosua","Adwoa","Abenaa","Akua"," Yaa","Afua","Ama"];
 
 function validate() {
   var genders = document.getElementsByName("gender");
-  if( document.myForm.century.value == "" || isNaN( document.myForm.century.value ) ||
-  document.myForm.century.value.length > 2||document.myForm.century.value >  20 || document.myForm.century.value <=0) {
-     alert( "Please provide a valid Century of birth! eg 20 for the year 2019 and can not be greater than 20");
-     document.myForm.century.focus() ;
-     return false;
-  }
-  else if( document.myForm.year.value == "" || isNaN( document.myForm.year.value ) ||
-  document.myForm.year.value.length > 2 || document.myForm.year.value > 99  || document.myForm.year.value <=0) {
-     alert( "Please provide a valid year of birth! eg 19 for 2019" );
+  if( document.myForm.year.value == "" || document.myForm.year.value.length !=4 || document.myForm.year.value >2100 || document.myForm.year.value <=1900) {
+     alert( "Please provide a valid year of birth! eg 2019" );
      document.myForm.year.focus() ;
      return false;
   }
   else if( document.myForm.month.value == "" || isNaN( document.myForm.month.value ) || 
-  document.myForm.month.value.length > 2 || document.myForm.month.value > 12  || document.myForm.month.value <= 0){
+  document.myForm.month.value.length != 2 || document.myForm.month.value > 12  || document.myForm.month.value <= 0){
      alert( "Please provide your month of birth! between 1 and 12" );
      document.myForm.month.focus() ;
      return false;
   }
-  else if( document.myForm.date.value == "" || document.myForm.date.value > 31 || document.myForm.date.value <= 0) {
+  else if( document.myForm.date.value == "" || isNaN( document.myForm.month.value ) || 
+  document.myForm.month.value.length != 2|| document.myForm.date.value > 31 || document.myForm.date.value <= 0) {
      alert( "Please provide a valid date that you were born in!" );
      document.myForm.day.focus() ;
      return false;
@@ -33,14 +27,15 @@ function validate() {
       return false;
   }   
   else{
-    return( true );
+    return true ;
   }
   
 }
 
 function calculateDayValue(){
-  CC = parseInt(document.getElementById("century").value);
-  YY = parseInt(document.getElementById("year").value);
+  year = document.getElementById("year").value;
+  CC = parseInt(year.substring(0,2));
+  YY = parseInt(year.substring(2,4));
   MM = parseInt(document.getElementById("month").value);
   DD = parseInt(document.getElementById("date").value);
   d = ( ( (CC/4) -2*CC-1) + ( (5*YY/4) ) + ((26*(MM+1)/10) ) + DD)%7;
